@@ -1,0 +1,47 @@
+@media (min-width: 321px) and (max-width:375px) {
+    .reset, .equal {
+        width: 120px !important;
+    }
+}
+@media (min-width: 376px) and (max-width:425px) {
+    .reset, .equal {
+        width: 130px !important;
+    }
+}
+@media (min-width: 426px) and (max-width:1024px) {
+    .container {
+        width: 320px;
+        margin: auto;
+    }
+}
+@media (min-width: 1024px) and (max-width:1440px) {
+    .container {
+        width: 600px;
+        margin: auto;
+    }
+    h2,
+    .keys button
+    {
+        font-size: 2rem !important;
+    }
+    .nums-theme,
+    .title {
+        font-size: 1rem !important;
+    }
+    .btn {
+        width: 75px !important;
+    }
+    input {
+        height: 100px !important;
+        font-size: 3rem !important;
+    }
+    .keys button:not(.reset,.equal) {
+        width: 110px !important;
+        height: 70px !important;
+    }
+    .reset,
+    .equal {
+        width: 250px !important;
+        height: 85px !important;
+    }
+}

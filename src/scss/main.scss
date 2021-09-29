@@ -1,0 +1,194 @@
+@import '../scss/vars';
+@import '../scss/media';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $spartan;
+}
+    
+    .calc {
+        width: 100%;
+        min-height: 100vh;
+        background-color: $mainBack1;
+        padding: 40px 20px;
+    h2 {
+        color: $white;
+        font-size: 1.5rem;
+        font-weight: 700;
+        float: left;
+    }
+    .theme {
+        float: right;
+        color: $white;
+            .title {
+                display: inline-block;
+                font-size: calc(1rem - 5px);
+                margin-right: 15px;
+                font-weight: 700;
+            }
+            .toggler {
+                display: inline-block;
+                text-align: center;
+                .nums-theme {
+                    font-size: calc(1rem - 6px);
+                    letter-spacing: 12px;
+                    margin-left: 12px;
+                    font-weight: 700;
+                    cursor: pointer;
+                                }
+                .btn {
+                    width: 60px;
+                    height: 20px;
+                    border-radius: 20px;
+                    background-color: $keypadBack1;
+                    padding: 0 5px;
+                    display: flex;
+                    justify-content: flex-start;
+                        button {
+                            width: 12px;
+                            height: 12px;
+                            border-radius: 50%;
+                            outline: none;
+                            border: none;
+                            margin-top: 4px;
+                            background-color: $keyBackToggle1;
+                    }
+                }
+            }
+        }
+        input {
+            width: 100%;
+            height: 80px;
+            background-color: $screenBack1;
+            border-radius: 10px;
+            outline: none;
+            border: none;
+            margin-top: 25px;
+            padding: 0 10px;
+            color: $white;
+            font-size: calc(1rem + 4px);
+            font-weight: 700;
+            text-align: right;
+        }
+        .keys {
+            width: 100%;
+            height: fit-content;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: auto;
+            justify-content: center;
+            place-items: center;
+            background-color: $keypadBack1;
+            border-radius: 10px;
+            margin-top: 20px;
+            button {
+                width: 50px;
+                height: 50px;
+                margin: 5px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                color: $darkBlue;
+                font-weight: 700;
+                font-size: 1.4rem;
+                border-bottom: 4px solid $keysShadow1;
+                padding-top: 7px;
+                cursor: pointer;
+            }
+            .delete, .reset {
+                background-color: $keyBack1;
+                color: $white;
+                font-weight: 700;
+                font-size: 1rem;
+            }
+            .delete {
+                border-bottom: 4px solid $keyShadow1;
+            }
+            .reset, .equal{
+                width: 110px;
+                grid-column: span 2;
+                border-bottom: 4px solid $keyShadow1;
+            }
+            .equal {
+                background-color: $keyBackToggle1;
+                color: $white;
+                border-color: $keyShadow1Orange;
+            }
+        }
+    }
+
+    // themes classes 
+    .backTheme2 {
+        background-color: $mainBack2;
+    }
+    .backTheme3 {
+        background-color: $mainBack3;
+    }
+    .txtColor2 {
+        color: $darkYellow !important;
+    }
+    .txtColor3 {
+        color: $lightYellow !important;
+    }
+    .circleBack2 {
+        background-color: $keyBackToggle2 !important;
+    }
+    .circleBack3 {
+        background-color: $keyBackToggle3 !important;
+    }
+    .toggleBack2 {
+        background-color: $orangeKeyBack2 !important;
+        justify-content: center !important;
+    }
+    .toggleBack3 {
+        background-color:  $darkViolet !important;
+        justify-content: flex-end !important;
+    }
+    .inputTheme2 {
+        background-color: $screenBack2 !important;
+        color: $darkYellow !important;
+    }
+    .inputTheme3 {
+        background-color: $screenBack3 !important;
+        color: $lightYellow !important;
+    }
+    .keysTheme2 {
+        background-color: $keypadBack2 !important;
+    }
+    .keysTheme3 {
+        background-color: $screenBack3 !important;
+    }
+    .btnTheme2 {
+        background-color: $screenBack2 !important;
+        border-color: $orangeKeyShadow2 !important;
+        color: $darkYellow !important;
+    }
+    .btnTheme3 {
+        background-color: hsl(281, 89%, 26%) !important;
+        border-color: hsl(285, 91%, 52%) !important;
+        color: $lightYellow !important;
+    }
+    .btnDelTheme2 {
+        background-color: $keyBack2 !important;
+        border-color: $keyShadow2 !important;
+    }
+    .btnDelTheme3, .btnResTheme3 {
+        background-color: $darkMagenta !important;
+        border-color: $keyShadow3 !important;
+    }
+    .btnResTheme2 {
+        background-color: $keyBack2 !important;
+        border-color: $keyShadow2 !important;
+    }
+    .btnEqTheme2 {
+        background-color: $keyBackToggle2 !important;
+        border-color: $keyEqualShadow2 !important;
+    }
+    .btnEqTheme3 {
+        background-color: $keyBackToggle3 !important;
+        border-color: $keyEqualShadow3  !important;
+        color: $darkBlue !important;
+    }
